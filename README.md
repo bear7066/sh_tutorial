@@ -10,7 +10,7 @@
   1. ```cd ~ ```
   2.  ```vim .bashrc```
   3. Add the following line to your .bashrc file: ```echo "Hello world!"```
-  4. ```source ./.bashrc```
+  4. ```source .bashrc```
   5. turn down your terminal and reopen it.
 - Method2
   1. Add the path of your completed-function shellscript to .bashrc
