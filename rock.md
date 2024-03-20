@@ -50,14 +50,18 @@ fi
 ```sh
 #!/bin/bash
 
-compile_exe="g++ tu.cpp -o exe && ./exe"
-
-eval "$compile_cmd"
+compile="g++ tu.cpp -o exe"
+execution="./exe"
+# use eval for program operations
+eval "$execution"
 
 # Check if compilation was successful
+# #? will holds the result of the last command
+# 0 for success, 1 for error
 if [ $? -eq 0 ]; then
     # Execute the program if compilation was successful
-    eval "$execute_cmd"
+    echo "Your program works! Here's the output~ "
+    eval "$execution"
 else
     echo "Compilation failed."
 fi

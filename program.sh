@@ -1,14 +1,18 @@
 #(g++ tu.cpp -o exe) && ./exe
 
-compile_exe="g++ tu.cpp -o exe && ./exe"
+#!/bin/bash
 
-eval "$compile_exe"
+compile="g++ tu.cpp -o exe"
+execution="./exe"
 
 # Check if compilation was successful
+# #? will holds the result of the last command
+# 0 for success, 1 for error
 if [ $? -eq 0 ]; then
     # Execute the program if compilation was successful
-    eval "$compile_exe"
+    echo "Your program works! Here's the output~ "
+    # Which use eval in shellscript
+    eval "$execution"
 else
     echo "Compilation failed."
 fi
-
