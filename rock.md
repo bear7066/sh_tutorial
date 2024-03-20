@@ -51,17 +51,14 @@ fi
 #!/bin/bash
 
 compile="g++ tu.cpp -o exe"
-execution="./exe"
-# use eval for program operations
-eval "$execution"
-
 # Check if compilation was successful
-# #? will holds the result of the last command
+# $? will holds the result of the last command
 # 0 for success, 1 for error
+eval "$compile"
 if [ $? -eq 0 ]; then
     # Execute the program if compilation was successful
     echo "Your program works! Here's the output~ "
-    eval "$execution"
+    ./exe
 else
     echo "Compilation failed."
 fi

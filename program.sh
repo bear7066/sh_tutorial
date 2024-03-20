@@ -3,7 +3,8 @@
 #!/bin/bash
 
 compile="g++ tu.cpp -o exe"
-execution="./exe"
+
+eval "$compile"
 
 # Check if compilation was successful
 # #? will holds the result of the last command
@@ -12,7 +13,7 @@ if [ $? -eq 0 ]; then
     # Execute the program if compilation was successful
     echo "Your program works! Here's the output~ "
     # Which use eval in shellscript
-    eval "$execution"
+    ./exe
 else
     echo "Compilation failed."
 fi

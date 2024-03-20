@@ -8,3 +8,5 @@ elif [ $GRADE -lt 80 -a $GRADE -gt 69 ]; then
 else [ $GRADE -lt 70 ];
     echo "You failed:<"
 fi
+
+
