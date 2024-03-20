@@ -6,12 +6,15 @@
 
 ### 💯Homework tutorial
 
-1. ```cd ~ ```
-2.  ```vim .bashrc```
-3. Add the following line to your .bashrc file: ```echo "Hello world!"```
-4. ```source ./.bashrc```
-5. turn down your terminal and reopen it.
-
+- Method1
+  1. ```cd ~ ```
+  2.  ```vim .bashrc```
+  3. Add the following line to your .bashrc file: ```echo "Hello world!"```
+  4. ```source ./.bashrc```
+  5. turn down your terminal and reopen it.
+- Method2
+  1. Add the path of your shellscript to .bashrc
+     1. ```/path/to/shellscript```
 ### Explaination:
 - ```.bashrc``` is the system shell script, everytime you open it, it will scan itself and check the settings.
 - ```cd ~``` can bring you to the home directory.
