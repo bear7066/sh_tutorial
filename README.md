@@ -13,7 +13,7 @@
   4. ```source ./.bashrc```
   5. turn down your terminal and reopen it.
 - Method2
-  1. Add the path of your shellscript to .bashrc
+  1. Add the path of your completed-function shellscript to .bashrc
      1. ```/path/to/shellscript```
 ### Explaination:
 - ```.bashrc``` is the system shell script, everytime you open it, it will scan itself and check the settings.
