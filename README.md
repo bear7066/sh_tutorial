@@ -12,7 +12,7 @@
 4. ```source ./.bashrc```
 5. turn down your terminal and reopen it.
 
-Explaination:
+### Explaination:
 - .bashrc is the system shell script, everytime you open it, it will scan itself and check the settings.
 - cd ~ can bring you to the home directory.
 - source can execute your file.
